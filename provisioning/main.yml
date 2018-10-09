@@ -22,3 +22,4 @@
     - role: ntp
     - role: postgresql
     - role: elixir
+    - role: node

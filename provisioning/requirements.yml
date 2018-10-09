@@ -6,3 +6,6 @@
 
 - src: geerlingguy.postgresql
   name: postgresql
+
+- src: geerlingguy.nodejs
+  name: node

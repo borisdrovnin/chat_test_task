@@ -1,4 +1,6 @@
 ---
+nodejs_version: "9.x"
+
 postgresql_databases:
   - name: chat_db
   - name: chat_db_test

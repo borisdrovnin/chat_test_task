@@ -1,0 +1,15 @@
+---
+postgresql_databases:
+  - name: chat_db
+  - name: chat_db_test
+postgresql_users:
+  - name: chat_user
+    password: 123456
+    db: chat_db
+    priv: "ALL"
+    role_attr_flags: "CREATEDB"
+  - name: chat_user_test
+    password: 123456
+    db: chat_db_test
+    priv: "ALL"
+    role_attr_flags: "CREATEDB"

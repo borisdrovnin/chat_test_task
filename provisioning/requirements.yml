@@ -1,0 +1,8 @@
+- src: floriankempenich.erlang-elixir-phoenix
+  name: elixir
+
+- src: geerlingguy.ntp
+  name: ntp
+
+- src: geerlingguy.postgresql
+  name: postgresql

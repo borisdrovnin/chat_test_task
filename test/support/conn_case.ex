@@ -26,13 +26,13 @@ defmodule ChatTestTaskWeb.ConnCase do
     end
   end
 
-
   setup tags do
     :ok = Ecto.Adapters.SQL.Sandbox.checkout(ChatTestTask.Repo)
+
     unless tags[:async] do
       Ecto.Adapters.SQL.Sandbox.mode(ChatTestTask.Repo, {:shared, self()})
     end
+
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end
-
 end

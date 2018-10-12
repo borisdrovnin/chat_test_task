@@ -11,7 +11,7 @@ defmodule ChatTestTask.Application do
       # Start the Ecto repository
       supervisor(ChatTestTask.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(ChatTestTaskWeb.Endpoint, []),
+      supervisor(ChatTestTaskWeb.Endpoint, [])
       # Start your own worker by calling: ChatTestTask.Worker.start_link(arg1, arg2, arg3)
       # worker(ChatTestTask.Worker, [arg1, arg2, arg3]),
     ]

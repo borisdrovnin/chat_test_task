@@ -1,0 +1,22 @@
+<!-- <div class="jumbotron"> -->
+<div class="list-group">
+  <%= for chat <- @chats do %>
+  <a
+    href="<%= chat_path(@conn, :show, chat.id) %>"
+    class="list-group-item"
+  >
+    <%= chat.title %>
+  </a>
+  <% end %>
+</div>
+  <%= form_tag("/chats", method: :post) %>
+  <div class="row">
+    <div class="input-group">
+      <input type="text" class="form-control" name="title">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">Создать чат</button>
+      </span>
+    </div>
+  </div>
+</form>
+<!-- </div> -->

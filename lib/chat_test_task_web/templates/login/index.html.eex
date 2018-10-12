@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h2>Введите имя</h2>
+  <%= form_tag("/", method: :post) %>
+    <div class="row">
+      <div class="input-group">
+        <input type="text" class="form-control" name="username" value="<%= @username %>">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">Войти</button>
+        </span>
+      </div>
+    </div>
+  </form>
+</div>

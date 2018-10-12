@@ -1,0 +1,9 @@
+<h2><%= @chat.title %></h2>
+<ul class="list-group">
+  <%= for message <- @messages do %>
+    <li class="list-group-item">
+      <div><strong><%= message.username %></strong></div>
+      <div><%= message.content %></div>
+    </li>
+  <% end %>
+</ul>

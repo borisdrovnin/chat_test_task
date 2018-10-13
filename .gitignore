@@ -32,3 +32,5 @@ provisioning/roles/
 \.vagrant/
 
 *.log
+
+doc/

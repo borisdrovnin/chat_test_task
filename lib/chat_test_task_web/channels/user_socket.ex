@@ -2,7 +2,7 @@ defmodule ChatTestTaskWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", ChatTestTaskWeb.RoomChannel
+  channel("chat:*", ChatTestTaskWeb.ChatChannel)
 
   ## Transports
   transport(:websocket, Phoenix.Transports.WebSocket)

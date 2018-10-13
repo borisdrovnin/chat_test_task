@@ -1,5 +1,5 @@
 <h2><%= @chat.title %></h2>
-<ul class="list-group">
+<ul class="list-group chat-messages" id="messages">
   <%= for message <- @messages do %>
     <li class="list-group-item">
       <div><strong><%= message.username %></strong></div>
@@ -7,3 +7,9 @@
     </li>
   <% end %>
 </ul>
+<input type="hidden" id="username" value="<%= @username %>">
+<input type="hidden" id="chat-id" value="<%= @chat.id %>">
+<div class="input-group">
+  <span class="input-group-addon"><%= @username %></span>
+  <input type="text" class="form-control" id="chat-input">
+</div>
